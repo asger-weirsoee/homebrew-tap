@@ -1,0 +1,21 @@
+name: Test formulae on macOS
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        formula: [ubl-tools, ahfail]
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Tap this checkout, so the formulae are tested exactly as committed.
+      - run: brew tap asger-weirsoee/tap "$GITHUB_WORKSPACE"
+      - run: brew install --build-from-source asger-weirsoee/tap/${{ matrix.formula }}
+      - run: brew test asger-weirsoee/tap/${{ matrix.formula }}
+      - run: brew audit --strict asger-weirsoee/tap/${{ matrix.formula }} || true
