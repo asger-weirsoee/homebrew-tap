@@ -1,8 +1,8 @@
 class UblTools < Formula
   desc "Read UBL e-invoices (Peppol BIS 3.0, OIOUBL) offline and save their attachments"
   homepage "https://gitea.weircon.dk/agw/ubl-tools"
-  url "https://gitea.weircon.dk/agw/ubl-tools/archive/v0.2.0.tar.gz"
-  sha256 "a6f4742db202661262f1bae66737417989c98b00ab5b4e7e4c64254f5e99f763"
+  url "https://gitea.weircon.dk/agw/ubl-tools/archive/v0.3.0.tar.gz"
+  sha256 "0ed5baba3e5e30fb934412d4da49e03a77d464127c67d3639990ac96568592f1"
   license any_of: ["MIT", "Apache-2.0"]
 
   depends_on "rust" => :build
