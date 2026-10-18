@@ -1,6 +1,6 @@
 class Ahfail < Formula
   desc "Plays 'ah ah ah, you didn't say the magic word' on failed screen lock attempts"
-  homepage "https://gitea.weircon.dk/agw/gtk-ahfail"
+  homepage "https://asger.xn--weirse-fya.dk/en/projects/ahfail"
   url "https://gitea.weircon.dk/agw/gtk-ahfail/archive/v0.10.2.tar.gz"
   sha256 "7a437e3c813c0302ef9864d0ad6acbb7746aad4178e66f5a772c08d7808f07d2"
   license "AGPL-3.0-only"

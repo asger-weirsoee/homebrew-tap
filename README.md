@@ -8,10 +8,10 @@ brew install ubl-tools   # read UBL e-invoices (Peppol, OIOUBL) offline: ubl vie
 brew install ahfail      # "ah ah ah, you didn't say the magic word" on a failed screen unlock
 ```
 
-| Formula | Source |
-|---|---|
-| `ubl-tools` | [gitea.weircon.dk/agw/ubl-tools](https://gitea.weircon.dk/agw/ubl-tools) |
-| `ahfail` | [gitea.weircon.dk/agw/gtk-ahfail](https://gitea.weircon.dk/agw/gtk-ahfail) |
+| Formula | Project page | Source |
+|---|---|---|
+| `ubl-tools` | [asger.weirsøe.dk/en/projects/ubl-tools](https://asger.xn--weirse-fya.dk/en/projects/ubl-tools) | [gitea.weircon.dk/agw/ubl-tools](https://gitea.weircon.dk/agw/ubl-tools) |
+| `ahfail` | [asger.weirsøe.dk/en/projects/ahfail](https://asger.xn--weirse-fya.dk/en/projects/ahfail) | [gitea.weircon.dk/agw/gtk-ahfail](https://gitea.weircon.dk/agw/gtk-ahfail) |
 
 The code lives on my own Gitea; this tap only holds the formulae, which the
 release pipelines there update on every tag. Arch Linux packages and Windows
